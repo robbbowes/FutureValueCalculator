@@ -17,7 +17,7 @@ namespace FutureValueCalculator.Controllers
         {
             if (ModelState.IsValid)
             {
-                ViewBag.FutureValue = futureValueModel.Calculate().ToString("c2");
+                ViewBag.FutureValue = futureValueModel.Calculate();
             }
             else
             {
